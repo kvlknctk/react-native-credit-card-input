@@ -53,7 +53,7 @@ export default class CCInput extends Component {
     additionalInputProps: {},
   };
 
-  UNSAFE_componentWillReceiveProps = newProps => {
+  componentWillReceiveProps = newProps => {
     const { status, value, onBecomeEmpty, onBecomeValid, field } = this.props;
     const { status: newStatus, value: newValue } = newProps;
 
